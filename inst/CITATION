@@ -1,6 +1,6 @@
 structure(list(pustina2016automated = structure(list(title = "Automated segmentation of chronic stroke lesions using LINDA: Lesion identification with neighborhood data analysis",
     author = structure(list(list(given = "Dorian", family = "Pustina",
-        role = NULL, email = NULL, comment = NULL), list(given = c(38;5;85m"H",
+        role = NULL, email = NULL, comment = NULL), list(given = c("H",
     "Branch"), family = "Coslett", role = NULL, email = NULL,
         comment = NULL), list(given = c("Peter", "E"), family = "Turkeltaub",
         role = NULL, email = NULL, comment = NULL), list(given = "Nicholas",

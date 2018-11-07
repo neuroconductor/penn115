@@ -21,6 +21,11 @@ The goal of `penn60` is to providee an template high-resolution 'T1' magnetic
     a University of Pennsylvania study <doi.org/10.1002/hbm.23110>. A 
     template, brain, and brain mask are given.
 
+## Citing
+
+```{r, comment=""}
+citation("penn60")
+```
 
 ## Installation
 
