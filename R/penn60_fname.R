@@ -6,11 +6,11 @@
 #' @export
 #'
 #' @examples
-#' penn60_fname("image")
-#' penn60_fname("brain")
-#' penn60_fname("brain_mask")
-#' penn60_fname("brain_mask_probability")
-#' penn60_fname("registration_mask")
+#' penn60_fname(type = "image")
+#' penn60_fname(type = "brain")
+#' penn60_fname(type = "brain_mask")
+#' penn60_fname(type = "brain_mask_probability")
+#' penn60_fname(type = "registration_mask")
 #'
 #' img = penn60_image()
 #'
@@ -33,29 +33,30 @@ penn60_fname = function(
 
 #' @export
 #' @rdname penn60_fname
-penn60_image_fname = function() penn60_fname("image")
+penn60_image_fname = function() penn60_fname(type = "image")
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain_fname = function() penn60_fname("brain")
+penn60_brain_fname = function() penn60_fname(type = "brain")
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain_mask_fname = function() penn60_fname("brain_mask")
+penn60_brain_mask_fname = function() penn60_fname(type = "brain_mask")
 
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain_mask_probability_fname = function() penn60_fname("brain_mask_probability")
+penn60_brain_mask_probability_fname = function() penn60_fname(type = "brain_mask_probability")
 
 #' @export
 #' @rdname penn60_fname
-penn60_registration_mask_fname = function() penn60_fname("brain_mask_probability")
+penn60_registration_mask_fname = function() penn60_fname(type = "brain_mask_probability")
 
 
 #' @export
 #' @rdname penn60_fname
 #' @importFrom neurobase readnii
+#' @param ... arguments to pass to \code{\link{penn60_fname}}
 penn60_nifti = function(...) {
   fname = penn60_fname(...)
   stopifnot(file.exists(fname))
@@ -66,23 +67,23 @@ penn60_nifti = function(...) {
 
 #' @export
 #' @rdname penn60_fname
-penn60_image = function() penn60_nifti("image")
+penn60_image = function() penn60_nifti(type = "image")
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain = function() penn60_nifti("brain")
+penn60_brain = function() penn60_nifti(type = "brain")
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain_mask = function() penn60_nifti("brain_mask")
+penn60_brain_mask = function() penn60_nifti(type = "brain_mask")
 
 
 #' @export
 #' @rdname penn60_fname
-penn60_brain_mask_probability = function() penn60_nifti("brain_mask_probability")
+penn60_brain_mask_probability = function() penn60_nifti(type = "brain_mask_probability")
 
 #' @export
 #' @rdname penn60_fname
-penn60_registration_mask = function() penn60_nifti("brain_mask_probability")
+penn60_registration_mask = function() penn60_nifti(type = "brain_mask_probability")
 
 

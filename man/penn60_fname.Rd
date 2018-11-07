@@ -42,6 +42,8 @@ penn60_registration_mask()
 }
 \arguments{
 \item{type}{type of image to return}
+
+\item{...}{arguments to pass to \code{\link{penn60_fname}}}
 }
 \value{
 A character vector
@@ -50,11 +52,11 @@ A character vector
 Filename of penn60 image
 }
 \examples{
-penn60_fname("image")
-penn60_fname("brain")
-penn60_fname("brain_mask")
-penn60_fname("brain_mask_probability")
-penn60_fname("registration_mask")
+penn60_fname(type = "image")
+penn60_fname(type = "brain")
+penn60_fname(type = "brain_mask")
+penn60_fname(type = "brain_mask_probability")
+penn60_fname(type = "registration_mask")
 
 img = penn60_image()
 
