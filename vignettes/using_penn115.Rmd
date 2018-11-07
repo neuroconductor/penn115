@@ -1,10 +1,10 @@
 ---
-title: "Using the Penn60 atlas"
+title: "Using the Penn115 atlas"
 author: "John Muschelli"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using the Penn60 Atlas}
+  %\VignetteIndexEntry{Using the Penn115 Atlas}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,15 +16,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Read in the Penn60 Template
+# Read in the Penn115 Template
 
 The Penn immages include a brain mask and an image.  We will read them in and display them:
 ```{r}
-library(penn60)
+library(penn115)
 library(neurobase)
 
-img = penn60::penn60_image()
-mask = penn60::penn60_brain_mask()
+img = penn115::penn115_image()
+mask = penn115::penn115_brain_mask()
 ```
 
 ```{r}
@@ -33,7 +33,7 @@ neurobase::ortho2(img, mask, col.y = "#FF000080")
 
 
 ```{r}
-brain = penn60::penn60_brain()
+brain = penn115::penn115_brain()
 neurobase::ortho2(brain)
 ```
 

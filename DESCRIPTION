@@ -1,6 +1,6 @@
 Type: Package
-Package: penn60
-Title: Template MRI Scan from 60 University of Pennsylvania Patients
+Package: penn115
+Title: Template MRI Scan from 115 University of Pennsylvania Patients
 Version: 0.1.1
 Authors@R: 
     c(
@@ -16,7 +16,7 @@ Authors@R:
            comment = c(ORCID = "0000-0001-6469-1750")) 
     )
 Description: Provides an template high-resolution 'T1' magnetic
-    resonance imaging ('MRI') from 60 patients from 
+    resonance imaging ('MRI') from 115 patients from 
     a University of Pennsylvania study <doi.org/10.1002/hbm.23110>. A 
     template, brain, and brain mask are given.
 License: GPL-3
@@ -31,6 +31,6 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
-URL: https://github.com/muschellij2/penn60
-BugReports: https://github.com/muschellij2/penn60/issues
+URL: https://github.com/muschellij2/penn115
+BugReports: https://github.com/muschellij2/penn115/issues
 RoxygenNote: 6.1.0

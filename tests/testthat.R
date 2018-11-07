@@ -1,4 +1,4 @@
 library(testthat)
-library(penn60)
+library(penn115)
 
-test_check("penn60")
+test_check("penn115")
