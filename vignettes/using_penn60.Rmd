@@ -1,0 +1,42 @@
+---
+title: "Using the Penn60 atlas"
+author: "John Muschelli"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the Penn60 Atlas}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Read in the Penn60 Template
+
+The Penn immages include a brain mask and an image.  We will read them in and display them:
+```{r}
+library(penn60)
+library(neurobase)
+
+img = penn60::penn60_image()
+mask = penn60::penn60_brain_mask()
+```
+
+```{r}
+neurobase::ortho2(img, mask, col.y = "#FF000080")
+```
+
+
+```{r}
+brain = penn60::penn60_brain()
+neurobase::ortho2(brain)
+```
+
+
+
+
