@@ -8,3 +8,8 @@
 ^penn60\.Rproj$
 ^\.Rproj\.user$
 ^.*\.Rproj$
+^DESCRIPTION\.bak$
+^\.github$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
